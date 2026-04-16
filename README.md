@@ -3,7 +3,7 @@
 > *"What if every coastline was a fuel station, every ocean breeze a refinery, and every vehicle ran on water and wind?"*
 
 ![Hydrogen Highway — Hero](images/01-hero-coastal-facility.jpg)
-*Wide establishing shot — offshore wind turbines in morning light, coastal electrolysis facility on shore, pipeline heading inland, hydrogen-powered trucks on coastal road.*
+
 
 ---
 
