@@ -169,6 +169,7 @@ All energy input is 100% renewable, zero-carbon, dedicated green generation.
 ---
 
 ### Layer 2 — Seawater Intake and Pre-Processing
+![Brine Valorisation](images/09-brine-valorisation.svg)
 
 #### Ram pump intake system
 
@@ -314,6 +315,7 @@ Hydrogen is the smallest molecule in existence. It diffuses into steel, reacts w
 | Lined steel (retrofit) | Excellent | HDPE liner blocks H₂ from steel wall |
 
 #### Recommended pipeline specification — new construction
+![Pipeline Cross Section](images/05-pipeline-cross-section.svg)
 
 | Parameter | Specification |
 |---|---|
@@ -484,6 +486,11 @@ HDPE alone is permeable to hydrogen. Over days to weeks, hydrogen molecules diff
 | **Total fleet required** | **~750 barrels** |
 
 #### Barrel lifecycle and circular economy
+![Transport Barrel Exploded View](images/06-barrel-exploded.svg)
+*Exploded view of the modular recycled HDPE/aluminium transport barrel.*
+
+![Barrel Lifecycle](images/07-barrel-lifecycle.svg)
+*Closed-loop lifecycle of the transport barrels — from recycled plastic to reuse and back to recycling.*
 
 ```
     POST-CONSUMER WASTE
@@ -647,6 +654,9 @@ Future fueling stations are not single-fuel. A single site serves:
 | Revenue diversification | Convenience store, café, driver amenities | All customers |
 
 The station becomes a **transport energy hub**, not a single-fuel outlet.
+
+![Fueling Station Layout](images/08-fueling-station-layout.svg)
+*Modular hydrogen fueling station layout with dispensers, storage, and safety systems.*
 
 ---
 
@@ -952,6 +962,8 @@ With full incentive stack (2030–2035), simple payback improves to **8–12 yea
 | Circular economy | Single-use packaging | Closed-loop barrel system |
 | Infrastructure life | 20–30 years | 50+ years (pipeline), 25+ years (wind) |
 
+![Cost Trajectory](images/10-cost-trajectory.svg)
+*Projected cost reduction curve for the full Hydrogen Highway system through 2040.*
 ---
 
 ## Contributing
