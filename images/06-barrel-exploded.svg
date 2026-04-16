@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="hdpeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4a7a2e"/>
+      <stop offset="30%" stop-color="#6a9a4e"/>
+      <stop offset="70%" stop-color="#5a8a3e"/>
+      <stop offset="100%" stop-color="#3a6a1e"/>
+    </linearGradient>
+    <linearGradient id="alGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a0a0b0"/>
+      <stop offset="30%" stop-color="#d0d0e0"/>
+      <stop offset="70%" stop-color="#c0c0d0"/>
+      <stop offset="100%" stop-color="#9090a0"/>
+    </linearGradient>
+    <linearGradient id="ssGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#708090"/>
+      <stop offset="50%" stop-color="#a0b0c0"/>
+      <stop offset="100%" stop-color="#607080"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="#f0f4f8" rx="8"/>
+
+  <!-- Title -->
+  <text x="300" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">Hydrogen Transport Barrel — Exploded View</text>
+  <text x="300" y="55" text-anchor="middle" font-size="12" fill="#4a5a6a">Type B | 450L | 350–500 bar | rHDPE Shell + Recycled Aluminium Liner</text>
+
+  <!-- ===== 1. VALVE ASSEMBLY (top, separated) ===== -->
+  <g transform="translate(300, 90)">
+    <!-- Valve body -->
+    <rect x="-15" y="-30" width="30" height="50" rx="5" fill="url(#ssGrad)" stroke="#4a5a6a" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="-8" y="-45" width="16" height="20" rx="3" fill="#8090a0" stroke="#4a5a6a" stroke-width="1"/>
+    <circle cx="0" cy="-40" r="5" fill="#a0b0c0" stroke="#4a5a6a" stroke-width="1"/>
+    <!-- Valve handle -->
+    <rect x="-20" y="-25" width="40" height="6" rx="2" fill="#ff6b6b"/>
+    <!-- Label -->
+    <text x="0" y="35" text-anchor="middle" font-size="10" font-weight="bold" fill="#4a5a6a">1. Valve Assembly</text>
+    <text x="0" y="48" text-anchor="middle" font-size="8" fill="#6a7a8a">Stainless Steel 316L</text>
+    <text x="0" y="60" text-anchor="middle" font-size="8" fill="#6a7a8a">SAE J2600 compliant</text>
+    <!-- Arrow down -->
+    <line x1="0" y1="65" x2="0" y2="85" stroke="#999" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  </g>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowGray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#999"/>
+    </marker>
+  </defs>
+
+  <!-- ===== 2. PROTECTIVE COLLAR ===== -->
+  <g transform="translate(300, 200)">
+    <rect x="-40" y="-20" width="80" height="40" rx="8" fill="#3a6a1e" stroke="#2a5a0e" stroke-width="1.5" filter="url(#shadow)" opacity="0.8"/>
+    <text x="0" y="-5" text-anchor="middle" font-size="9" fill="#c0e0a0">2. Protective Collar</text>
+    <text x="0" y="7" text-anchor="middle" font-size="8" fill="#a0d080">rHDPE</text>
+    <line x1="0" y1="22" x2="0" y2="45" stroke="#999" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  </g>
+
+  <!-- ===== 3. BOSS / NECK FITTING ===== -->
+  <g transform="translate(300, 280)">
+    <ellipse cx="0" cy="0" rx="30" ry="12" fill="url(#ssGrad)" stroke="#4a5a6a" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="-20" y="-20" width="40" height="20" rx="3" fill="url(#ssGrad)" stroke="#4a5a6a" stroke-width="1"/>
+    <text x="0" y="25" text-anchor="middle" font-size="10" font-weight="bold" fill="#4a5a6a">3. Boss / Neck Fitting</text>
+    <text x="0" y="38" text-anchor="middle" font-size="8" fill="#6a7a8a">Stainless Steel 316L</text>
+    <text x="0" y="50" text-anchor="middle" font-size="8" fill="#6a7a8a">Threaded connection</text>
+    <line x1="0" y1="55" x2="0" y2="75" stroke="#999" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  </g>
+
+  <!-- ===== 4. ALUMINIUM INNER LINER ===== -->
+  <g transform="translate(300, 400)">
+    <rect x="-70" y="-60" width="140" height="120" rx="10" fill="url(#alGrad)" stroke="#808090" stroke-width="1.5" filter="url(#shadow)"/>
+    <!-- Highlight line -->
+    <rect x="-50" y="-50" width="100" height="100" rx="5" fill="none" stroke="#e0e0f0" stroke-width="1" opacity="0.5"/>
+    <!-- Texture lines -->
+    <line x1="-60" y1="-30" x2="60" y2="-30" stroke="#b0b0c0" stroke-width="0.5" opacity="0.3"/>
+    <line x1="-60" y1="0" x2="60" y2="0" stroke="#b0b0c0" stroke-width="0.5" opacity="0.3"/>
+    <line x1="-60" y1="30" x2="60" y2="30" stroke="#b0b0c0" stroke-width="0.5" opacity="0.3"/>
+    <!-- Label -->
+    <text x="0" y="85" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a4a5a">4. Aluminium Inner Liner</text>
+    <text x="0" y="100" text-anchor="middle" font-size="9" fill="#6a6a7a">100% Recycled Aluminium</text>
+    <text x="0" y="113" text-anchor="middle" font-size="8" fill="#7a7a8a">Zero H₂ permeation barrier</text>
+    <!-- Arrow down -->
+    <line x1="0" y1="125" x2="0" y2="145" stroke="#999" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  </g>
+
+  <!-- ===== 5. rHDPE OUTER SHELL ===== -->
+  <g transform="translate(300, 580)">
+    <!-- Main body -->
+    <rect x="-85" y="-70" width="170" height="140" rx="15" fill="url(#hdpeGrad)" stroke="#2a5a0e" stroke-width="2" filter="url(#shadow)"/>
+    <!-- Ribs -->
+    <rect x="-85" y="-50" width="170" height="8" fill="#3a6a1e" opacity="0.5"/>
+    <rect x="-85" y="42" width="170" height="8" fill="#3a6a1e" opacity="0.5"/>
+    <!-- Recycling symbol -->
+    <g transform="translate(0, 0)">
+      <path d="M -8,-15 L 0,-25 L 8,-15 L 4,-15 L 4,-5 L -4,-5 L -4,-15 Z" fill="none" stroke="#c0e0a0" stroke-width="1.5"/>
+      <path d="M -15,5 L -25,-5 L -15,-13 L -15,-7 L -5,-7 L -5,3 L -15,3 Z" fill="none" stroke="#c0e0a0" stroke-width="1.5"/>
+      <path d="M 15,5 L 25,-5 L 15,-13 L 15,-7 L 5,-7 L 5,3 L 15,3 Z" fill="none" stroke="#c0e0a0" stroke-width="1.5"/>
+    </g>
+    <!-- Label -->
+    <text x="0" y="100" text-anchor="middle" font-size="11" font-weight="bold" fill="#c0e0a0">5. rHDPE Outer Shell</text>
+    <text x="0" y="115" text-anchor="middle" font-size="9" fill="#a0d080">100% Post-Consumer Recycled HDPE</text>
+    <text x="0" y="128" text-anchor="middle" font-size="8" fill="#90c070">Structural container | Impact protection</text>
+  </g>
+
+  <!-- ===== 6. CHIME RINGS ===== -->
+  <g transform="translate(300, 750)">
+    <ellipse cx="-70" cy="0" rx="20" ry="8" fill="#3a6a1e" stroke="#2a5a0e" stroke-width="1.5"/>
+    <ellipse cx="70" cy="0" rx="20" ry="8" fill="#3a6a1e" stroke="#2a5a0e" stroke-width="1.5"/>
+    <text x="0" y="15" text-anchor="middle" font-size="10" font-weight="bold" fill="#4a5a6a">6. Chime Rings (rHDPE)</text>
+    <text x="0" y="28" text-anchor="middle" font-size="8" fill="#6a7a8a">Rolling and stacking stability</text>
+  </g>
+
+  <!-- Specification box -->
+  <rect x="15" y="85" width="180" height="95" rx="8" fill="#fff" stroke="#4a9e4e" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="105" y="103" text-anchor="middle" font-size="10" font-weight="bold" fill="#2a7e2e">Type B Specifications</text>
+  <line x1="25" y1="110" x2="185" y2="110" stroke="#ccc" stroke-width="0.5"/>
+  <text x="25" y="125" font-size="9" fill="#333">Water volume: 450 L</text>
+  <text x="25" y="140" font-size="9" fill="#333">H₂ at 350 bar: 10.8 kg</text>
+  <text x="25" y="155" font-size="9" fill="#333">H₂ at 500 bar: 14.8 kg</text>
+  <text x="25" y="170" font-size="9" fill="#333">Empty weight: ~90 kg</text>
+
+  <!-- Material recovery box -->
+  <rect x="405" y="400" width="180" height="80" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" filter="url(#shadow)"/>
+  <text x="495" y="418" text-anchor="middle" font-size="10" font-weight="bold" fill="#2e7d32">♻️ Closed-Loop Recovery</text>
+  <text x="495" y="435" text-anchor="middle" font-size="9" fill="#333">rHDPE recovery: 98%</text>
+  <text x="495" y="450" text-anchor="middle" font-size="9" fill="#333">Aluminium recovery: 99%</text>
+  <text x="495" y="465" text-anchor="middle" font-size="9" fill="#333">Design life: 15 years</text>
+
+</svg>

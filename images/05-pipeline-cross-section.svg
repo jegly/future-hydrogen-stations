@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <pattern id="soilPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#8B6914"/>
+      <circle cx="5" cy="5" r="1" fill="#6B4914" opacity="0.5"/>
+      <circle cx="15" cy="12" r="1.5" fill="#6B4914" opacity="0.3"/>
+      <circle cx="8" cy="18" r="0.8" fill="#6B4914" opacity="0.4"/>
+    </pattern>
+    <pattern id="asphaltPattern" x="0" y="0" width="30" height="10" patternUnits="userSpaceOnUse">
+      <rect width="30" height="10" fill="#555"/>
+      <circle cx="5" cy="5" r="1" fill="#666" opacity="0.5"/>
+      <circle cx="15" cy="3" r="1.2" fill="#444" opacity="0.4"/>
+      <circle cx="25" cy="7" r="0.8" fill="#666" opacity="0.3"/>
+    </pattern>
+    <linearGradient id="pipeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a9e4e"/>
+      <stop offset="50%" stop-color="#3a8e3e"/>
+      <stop offset="100%" stop-color="#2a7e2e"/>
+    </linearGradient>
+    <linearGradient id="h2Grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00d4aa"/>
+      <stop offset="100%" stop-color="#00a088"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#e8f0f8" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a2e">Hydrogen Pipeline Cross-Section</text>
+  <text x="400" y="50" text-anchor="middle" font-size="12" fill="#4a5a6a">FRP (Fibre-Reinforced Polymer) Pipeline — 600mm Diameter — 1.5–2.0m Depth</text>
+
+  <!-- Sky -->
+  <rect x="50" y="70" width="700" height="60" fill="#87CEEB" opacity="0.5"/>
+
+  <!-- Ground surface / road -->
+  <rect x="50" y="130" width="700" height="25" fill="url(#asphaltPattern)"/>
+  <text x="400" y="147" text-anchor="middle" font-size="11" fill="#ccc">Road Surface / Ground Level</text>
+
+  <!-- Sub-base -->
+  <rect x="50" y="155" width="700" height="20" fill="#b8a88a"/>
+  <text x="400" y="169" text-anchor="middle" font-size="10" fill="#665">Compacted Sub-base</text>
+
+  <!-- Soil (trench backfill) -->
+  <rect x="50" y="175" width="700" height="200" fill="url(#soilPattern)"/>
+  <text x="400" y="280" text-anchor="middle" font-size="12" fill="#fff" opacity="0.7">Native Soil / Trench Backfill</text>
+
+  <!-- Bedding material around pipe -->
+  <rect x="150" y="300" width="500" height="100" rx="50" fill="#d4c4a0" opacity="0.6"/>
+
+  <!-- Pipe outer shell -->
+  <ellipse cx="400" cy="350" rx="150" ry="40" fill="url(#pipeGrad)" stroke="#2a6e2e" stroke-width="2" filter="url(#shadow)"/>
+  <ellipse cx="400" cy="350" rx="135" ry="35" fill="none" stroke="#5aae5e" stroke-width="1.5"/>
+
+  <!-- Hydrogen inner -->
+  <ellipse cx="400" cy="350" rx="100" ry="25" fill="url(#h2Grad)" opacity="0.3"/>
+  <text x="400" y="355" text-anchor="middle" font-size="14" font-weight="bold" fill="#00d4aa">H₂</text>
+  <text x="400" y="370" text-anchor="middle" font-size="10" fill="#00d4aa">70–100 bar</text>
+
+  <!-- Fibre optic cable -->
+  <circle cx="270" cy="340" r="6" fill="#ff6b6b" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="270" y="320" text-anchor="middle" font-size="8" fill="#ff6b6b">Fibre Optic</text>
+  <text x="270" y="330" text-anchor="middle" font-size="7" fill="#ff6b6b">DAS Sensor</text>
+
+  <!-- Warning tape -->
+  <rect x="150" y="240" width="500" height="12" rx="3" fill="#ffcc00"/>
+  <text x="400" y="250" text-anchor="middle" font-size="9" font-weight="bold" fill="#cc0000">⚠ CAUTION: HIGH-PRESSURE HYDROGEN PIPELINE — CALL BEFORE DIGGING ⚠</text>
+
+  <!-- Depth markers -->
+  <line x1="680" y1="130" x2="680" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="675" y1="130" x2="685" y2="130" stroke="#333" stroke-width="1"/>
+  <line x1="675" y1="350" x2="685" y2="350" stroke="#333" stroke-width="1"/>
+  <text x="690" y="245" font-size="10" fill="#333">1.5–2.0 m</text>
+
+  <!-- Annotations -->
+  <!-- Pipe material callout -->
+  <line x1="550" y1="350" x2="650" y2="420" stroke="#333" stroke-width="1"/>
+  <rect x="620" y="410" width="150" height="55" rx="5" fill="#fff" stroke="#4a9e4e" stroke-width="1" filter="url(#shadow)"/>
+  <text x="695" y="428" text-anchor="middle" font-size="10" font-weight="bold" fill="#2a7e2e">Pipe Specification</text>
+  <text x="695" y="443" text-anchor="middle" font-size="9" fill="#333">FRP (Glass-Fibre Reinforced)</text>
+  <text x="695" y="456" text-anchor="middle" font-size="9" fill="#333">600mm diameter | 15–25mm wall</text>
+
+  <!-- Fibre optic callout -->
+  <line x1="270" y1="340" x2="100" y2="450" stroke="#333" stroke-width="1"/>
+  <rect x="30" y="440" width="150" height="55" rx="5" fill="#fff" stroke="#ff6b6b" stroke-width="1" filter="url(#shadow)"/>
+  <text x="105" y="458" text-anchor="middle" font-size="10" font-weight="bold" fill="#cc0000">DAS Leak Detection</text>
+  <text x="105" y="473" text-anchor="middle" font-size="9" fill="#333">Distributed Acoustic</text>
+  <text x="105" y="486" text-anchor="middle" font-size="9" fill="#333">Sensing — real-time</text>
+
+  <!-- Embrittlement note -->
+  <rect x="280" y="500" width="240" height="45" rx="5" fill="#fff3cd" stroke="#ffc107" stroke-width="1"/>
+  <text x="400" y="518" text-anchor="middle" font-size="10" font-weight="bold" fill="#856404">⚠ H₂ Embrittlement Protection</text>
+  <text x="400" y="533" text-anchor="middle" font-size="9" fill="#856404">FRP is inherently immune to hydrogen embrittlement</text>
+
+  <!-- Cathodic protection note -->
+  <rect x="550" y="500" width="200" height="45" rx="5" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+  <text x="650" y="518" text-anchor="middle" font-size="10" font-weight="bold" fill="#155724">✅ No CP Required</text>
+  <text x="650" y="533" text-anchor="middle" font-size="9" fill="#155724">FRP is non-conductive — no corrosion</text>
+
+  <!-- Bedding callout -->
+  <line x1="200" y1="370" x2="100" y2="520" stroke="#333" stroke-width="1"/>
+  <rect x="30" y="510" width="120" height="40" rx="5" fill="#fff" stroke="#b8a88a" stroke-width="1"/>
+  <text x="90" y="528" text-anchor="middle" font-size="9" fill="#333">Sand/gravel bedding</text>
+  <text x="90" y="540" text-anchor="middle" font-size="8" fill="#666">Compacted</text>
+
+</svg>

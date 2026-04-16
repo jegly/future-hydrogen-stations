@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="brineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a6fb5"/>
+      <stop offset="100%" stop-color="#2a8fd5"/>
+    </linearGradient>
+    <linearGradient id="productGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00d4aa"/>
+      <stop offset="100%" stop-color="#00a088"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-opacity="0.2"/>
+    </filter>
+    <marker id="arrowBrine" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1a6fb5"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="600" fill="#f0f4f8" rx="8"/>
+
+  <!-- Title -->
+  <text x="500" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">Brine Valorisation — Converting Waste to Resource</text>
+  <text x="500" y="55" text-anchor="middle" font-size="12" fill="#4a5a6a">Zero Liquid Discharge | 550,000 m³/year Brine Stream | Multiple Revenue Products</text>
+
+  <!-- Input: Seawater -->
+  <rect x="50" y="80" width="160" height="60" rx="10" fill="url(#brineGrad)" filter="url(#shadow)"/>
+  <text x="130" y="105" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">🌊 Seawater Intake</text>
+  <text x="130" y="125" text-anchor="middle" font-size="10" fill="#c0e0ff">5,000 m³/day</text>
+
+  <!-- Arrow to RO -->
+  <line x1="210" y1="110" x2="280" y2="110" stroke="#1a6fb5" stroke-width="2.5" marker-end="url(#arrowBrine)"/>
+
+  <!-- RO Desalination -->
+  <rect x="290" y="80" width="180" height="60" rx="10" fill="#4a90d9" filter="url(#shadow)"/>
+  <text x="380" y="103" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">Reverse Osmosis</text>
+  <text x="380" y="122" text-anchor="middle" font-size="10" fill="#d0e8ff">40–50% Recovery</text>
+
+  <!-- Arrow: Fresh water to electrolysis -->
+  <line x1="380" y1="80" x2="380" y2="180" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowBrine)"/>
+  <rect x="330" y="185" width="100" height="30" rx="5" fill="#e0f0ff" stroke="#4a90d9" stroke-width="1"/>
+  <text x="380" y="204" text-anchor="middle" font-size="9" fill="#1a5a8a">Fresh Water → Electrolysis</text>
+
+  <!-- Arrow: Brine to valorisation -->
+  <line x1="470" y1="110" x2="540" y2="110" stroke="#1a6fb5" stroke-width="2.5" marker-end="url(#arrowBrine)"/>
+
+  <!-- Brine stream -->
+  <rect x="550" y="80" width="180" height="60" rx="10" fill="#0d3b66" filter="url(#shadow)"/>
+  <text x="640" y="103" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffd700">🧂 Concentrated Brine</text>
+  <text x="640" y="122" text-anchor="middle" font-size="10" fill="#ffe0a0">70,000 ppm TDS</text>
+
+  <!-- Arrow to processing branches -->
+  <line x1="640" y1="140" x2="640" y2="180" stroke="#0d3b66" stroke-width="2.5"/>
+  <line x1="640" y1="180" x2="200" y2="180" stroke="#0d3b66" stroke-width="2.5"/>
+  <line x1="200" y1="180" x2="200" y2="240" stroke="#0d3b66" stroke-width="2.5" marker-end="url(#arrowBrine)"/>
+  <line x1="640" y1="180" x2="900" y2="180" stroke="#0d3b66" stroke-width="2.5"/>
+  <line x1="900" y1="180" x2="900" y2="240" stroke="#0d3b66" stroke-width="2.5" marker-end="url(#arrowBrine)"/>
+
+  <!-- Branch label -->
+  <text x="420" y="175" text-anchor="middle" font-size="10" font-weight="bold" fill="#0d3b66">Brine Processing — Multiple Pathways</text>
+
+  <!-- ===== PRODUCT 1: NaOH + Cl₂ ===== -->
+  <rect x="50" y="250" width="260" height="100" rx="10" fill="#fff" stroke="#00d4aa" stroke-width="2" filter="url(#shadow)"/>
+  <text x="180" y="275" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a2e">① Chlor-Alkali Electrolysis</text>
+  <line x1="70" y1="285" x2="290" y2="285" stroke="#ddd" stroke-width="1"/>
+  <text x="180" y="303" text-anchor="middle" font-size="10" fill="#333">Brine → NaOH + Cl₂ + H₂</text>
+  <text x="180" y="320" text-anchor="middle" font-size="9" fill="#00a088" font-weight="bold">Sodium Hydroxide (NaOH)</text>
+  <text x="180" y="335" text-anchor="middle" font-size="8" fill="#666">$300–600/tonne | Industrial chemical</text>
+  <text x="180" y="348" text-anchor="middle" font-size="9" fill="#00a088" font-weight="bold">Chlorine (Cl₂)</text>
+
+  <!-- ===== PRODUCT 2: Magnesium ===== -->
+  <rect x="370" y="250" width="260" height="100" rx="10" fill="#fff" stroke="#f5a623" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500" y="275" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a2e">② Precipitation</text>
+  <line x1="390" y1="285" x2="610" y2="285" stroke="#ddd" stroke-width="1"/>
+  <text x="500" y="303" text-anchor="middle" font-size="10" fill="#333">Brine + Lime → Mg(OH)₂</text>
+  <text x="500" y="320" text-anchor="middle" font-size="9" fill="#f5a623" font-weight="bold">Magnesium Hydroxide</text>
+  <text x="500" y="335" text-anchor="middle" font-size="8" fill="#666">$500–1,000/tonne | Refractory, agricultural</text>
+  <text x="500" y="348" text-anchor="middle" font-size="8" fill="#666">Also: Calcium carbonate</text>
+
+  <!-- ===== PRODUCT 3: Salt ===== -->
+  <rect x="690" y="250" width="260" height="100" rx="10" fill="#fff" stroke="#8b4513" stroke-width="2" filter="url(#shadow)"/>
+  <text x="820" y="275" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a2e">③ Evaporative Crystallisation</text>
+  <line x1="710" y1="285" x2="930" y2="285" stroke="#ddd" stroke-width="1"/>
+  <text x="820" y="303" text-anchor="middle" font-size="10" fill="#333">Solar/thermal evaporation</text>
+  <text x="820" y="320" text-anchor="middle" font-size="9" fill="#8b4513" font-weight="bold">Industrial Salt (NaCl)</text>
+  <text x="820" y="335" text-anchor="middle" font-size="8" fill="#666">$50–100/tonne | Chemical feedstock</text>
+  <text x="820" y="348" text-anchor="middle" font-size="8" fill="#666">De-icing, water softening</text>
+
+  <!-- ===== PRODUCT 4: Lithium ===== -->
+  <rect x="210" y="400" width="260" height="80" rx="10" fill="#fff" stroke="#4a90d9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="340" y="423" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a2e">④ Lithium Extraction</text>
+  <line x1="230" y1="433" x2="450" y2="433" stroke="#ddd" stroke-width="1"/>
+  <text x="340" y="450" text-anchor="middle" font-size="10" fill="#333">Selective adsorption / solvent extraction</text>
+  <text x="340" y="467" text-anchor="middle" font-size="9" fill="#4a90d9" font-weight="bold">Lithium Carbonate / Hydroxide</text>
+  <text x="340" y="478" text-anchor="middle" font-size="8" fill="#666">$15,000–25,000/tonne | Batteries</text>
+
+  <!-- ===== PRODUCT 5: Bromine ===== -->
+  <rect x="530" y="400" width="260" height="80" rx="10" fill="#fff" stroke="#ff6b6b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="660" y="423" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a2e">⑤ Bromine Recovery</text>
+  <line x1="550" y1="433" x2="770" y2="433" stroke="#ddd" stroke-width="1"/>
+  <text x="660" y="450" text-anchor="middle" font-size="10" fill="#333">Chlorine oxidation + steam stripping</text>
+  <text x="660" y="467" text-anchor="middle" font-size="9" fill="#ff6b6b" font-weight="bold">Bromine (Br₂)</text>
+  <text x="660" y="478" text-anchor="middle" font-size="8" fill="#666">$3,000–5,000/tonne | Flame retardants</text>
+
+  <!-- Arrow to zero discharge -->
+  <line x1="400" y1="480" x2="400" y2="530" stroke="#1a6fb5" stroke-width="2.5"/>
+  <line x1="660" y1="480" x2="660" y2="530" stroke="#1a6fb5" stroke-width="2.5"/>
+  <line x1="400" y1="530" x2="660" y2="530" stroke="#1a6fb5" stroke-width="2.5"/>
+  <line x1="530" y1="530" x2="530" y2="555" stroke="#1a6fb5" stroke-width="2.5" marker-end="url(#arrowBrine)"/>
+
+  <!-- Zero discharge -->
+  <rect x="400" y="560" width="260" height="30" rx="8" fill="#1a5c2a" filter="url(#shadow)"/>
+  <text x="530" y="580" text-anchor="middle" font-size="12" font-weight="bold" fill="#90ee90">✅ Zero Liquid Discharge to Ocean</text>
+
+  <!-- Revenue summary box -->
+  <rect x="50" y="500" width="130" height="85" rx="8" fill="#1a1a2e" opacity="0.08" stroke="#1a1a2e" stroke-width="1"/>
+  <text x="115" y="520" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a2e">Revenue Potential</text>
+  <text x="115" y="540" text-anchor="middle" font-size="9" fill="#333">~$15M/year</text>
+  <text x="115" y="558" text-anchor="middle" font-size="8" fill="#666">at Phase 2 scale</text>
+  <text x="115" y="575" text-anchor="middle" font-size="8" fill="#666">45,000 t H₂/yr</text>
+
+</svg>

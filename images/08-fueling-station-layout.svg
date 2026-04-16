@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="asphalt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#555"/>
+      <stop offset="100%" stop-color="#444"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a9e4e"/>
+      <stop offset="100%" stop-color="#4a8e3e"/>
+    </linearGradient>
+    <linearGradient id="canopy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8899aa"/>
+      <stop offset="100%" stop-color="#6a7a8a"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+    <marker id="arrowDir" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffd700"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="700" fill="#e8f0f8" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">Pipeline-Connected Hydrogen Fueling Station</text>
+  <text x="450" y="50" text-anchor="middle" font-size="12" fill="#4a5a6a">Type: Major Corridor Station | Capacity: 1,000–2,000 kg/day | Site Area: ~2,000 m²</text>
+
+  <!-- Grass perimeter -->
+  <rect x="40" y="70" width="820" height="590" fill="url(#grass)" rx="5"/>
+
+  <!-- Driveway / asphalt -->
+  <rect x="60" y="90" width="780" height="550" fill="url(#asphalt)" rx="3"/>
+
+  <!-- Entrance road -->
+  <rect x="60" y="60" width="150" height="50" fill="#555"/>
+  <text x="135" y="80" text-anchor="middle" font-size="10" fill="#ffd700" font-weight="bold">ENTRANCE →</text>
+
+  <!-- Exit road -->
+  <rect x="690" y="60" width="150" height="50" fill="#555"/>
+  <text x="765" y="80" text-anchor="middle" font-size="10" fill="#ffd700" font-weight="bold">→ EXIT</text>
+
+  <!-- ===== DISPENSER ISLANDS ===== -->
+  <!-- Island 1 (left) - 700 bar -->
+  <rect x="100" y="180" width="180" height="15" rx="3" fill="#ddd"/>
+  <rect x="110" y="130" width="40" height="50" rx="5" fill="#2c3e50" stroke="#00d4aa" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="130" y="152" text-anchor="middle" font-size="8" fill="#00d4aa" font-weight="bold">700 bar</text>
+  <text x="130" y="164" text-anchor="middle" font-size="7" fill="#90e0d0">Cars</text>
+  <rect x="220" y="130" width="40" height="50" rx="5" fill="#2c3e50" stroke="#00d4aa" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="240" y="152" text-anchor="middle" font-size="8" fill="#00d4aa" font-weight="bold">700 bar</text>
+  <text x="240" y="164" text-anchor="middle" font-size="7" fill="#90e0d0">Cars</text>
+
+  <!-- Island 2 (right) - 350 bar -->
+  <rect x="620" y="180" width="180" height="15" rx="3" fill="#ddd"/>
+  <rect x="640" y="130" width="40" height="50" rx="5" fill="#2c3e50" stroke="#00d4aa" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="660" y="152" text-anchor="middle" font-size="8" fill="#00d4aa" font-weight="bold">350 bar</text>
+  <text x="660" y="164" text-anchor="middle" font-size="7" fill="#90e0d0">Trucks</text>
+  <rect x="740" y="130" width="40" height="50" rx="5" fill="#2c3e50" stroke="#00d4aa" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="760" y="152" text-anchor="middle" font-size="8" fill="#00d4aa" font-weight="bold">350 bar</text>
+  <text x="760" y="164" text-anchor="middle" font-size="7" fill="#90e0d0">Buses</text>
+
+  <!-- Canopy -->
+  <rect x="80" y="110" width="740" height="15" fill="url(#canopy)" rx="2" filter="url(#shadow)"/>
+  <rect x="80" y="195" width="740" height="5" fill="#6a7a8a"/>
+  <!-- Canopy supports -->
+  <rect x="100" y="110" width="6" height="90" fill="#7a8a9a"/>
+  <rect x="280" y="110" width="6" height="90" fill="#7a8a9a"/>
+  <rect x="620" y="110" width="6" height="90" fill="#7a8a9a"/>
+  <rect x="800" y="110" width="6" height="90" fill="#7a8a9a"/>
+  <!-- Solar on canopy -->
+  <rect x="100" y="108" width="700" height="6" fill="#f5a623" opacity="0.7"/>
+  <text x="450" y="108" text-anchor="middle" font-size="8" fill="#fff">☀️ Solar Canopy — 250 kW</text>
+
+  <!-- ===== COMPRESSION BUILDING ===== -->
+  <rect x="350" y="280" width="200" height="120" rx="8" fill="#d4c4a0" stroke="#8b7355" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="305" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a3a2a">Compression &amp; Purification</text>
+  <line x1="370" y1="315" x2="530" y2="315" stroke="#8b7355" stroke-width="1"/>
+  <text x="450" y="333" text-anchor="middle" font-size="9" fill="#4a3a2a">PSA Purification (99.97%)</text>
+  <text x="450" y="350" text-anchor="middle" font-size="9" fill="#4a3a2a">Multi-stage Compressors</text>
+  <text x="450" y="367" text-anchor="middle" font-size="9" fill="#4a3a2a">Pre-cooling (-40°C)</text>
+  <text x="450" y="384" text-anchor="middle" font-size="9" fill="#4a3a2a">Control Room</text>
+
+  <!-- ===== CASCADE STORAGE ===== -->
+  <rect x="350" y="430" width="200" height="80" rx="8" fill="#c0c0d0" stroke="#708090" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="455" text-anchor="middle" font-size="11" font-weight="bold" fill="#2a2a4e">Cascade Storage</text>
+  <line x1="370" y1="465" x2="530" y2="465" stroke="#708090" stroke-width="1"/>
+  <!-- Tank icons -->
+  <ellipse cx="390" cy="490" rx="12" ry="15" fill="#00d4aa" opacity="0.3" stroke="#00d4aa" stroke-width="1.5"/>
+  <ellipse cx="420" cy="490" rx="12" ry="15" fill="#00d4aa" opacity="0.3" stroke="#00d4aa" stroke-width="1.5"/>
+  <ellipse cx="450" cy="490" rx="12" ry="15" fill="#00d4aa" opacity="0.3" stroke="#00d4aa" stroke-width="1.5"/>
+  <ellipse cx="480" cy="490" rx="12" ry="15" fill="#00d4aa" opacity="0.3" stroke="#00d4aa" stroke-width="1.5"/>
+  <ellipse cx="510" cy="490" rx="12" ry="15" fill="#00d4aa" opacity="0.3" stroke="#00d4aa" stroke-width="1.5"/>
+  <text x="450" y="505" text-anchor="middle" font-size="8" fill="#4a4a6a">Type IV Composite | 800 kg @ 350 bar | 400 kg @ 700 bar</text>
+
+  <!-- ===== PIPELINE CONNECTION ===== -->
+  <rect x="70" y="430" width="180" height="80" rx="8" fill="#4a4a6a" stroke="#00d4aa" stroke-width="2" filter="url(#shadow)"/>
+  <text x="160" y="455" text-anchor="middle" font-size="11" font-weight="bold" fill="#00d4aa">Pipeline Connection</text>
+  <line x1="90" y1="465" x2="230" y2="465" stroke="#00d4aa" stroke-width="1"/>
+  <text x="160" y="483" text-anchor="middle" font-size="9" fill="#c0d0ff">H₂ Trunk Line</text>
+  <text x="160" y="498" text-anchor="middle" font-size="9" fill="#c0d0ff">100 bar inlet</text>
+
+  <!-- Pipeline connection line -->
+  <line x1="250" y1="470" x2="350" y2="470" stroke="#00d4aa" stroke-width="3" marker-end="url(#arrowDir)"/>
+
+  <!-- ===== FUEL CELL BACKUP ===== -->
+  <rect x="650" y="430" width="180" height="80" rx="8" fill="#2d5a3d" stroke="#90ee90" stroke-width="2" filter="url(#shadow)"/>
+  <text x="740" y="455" text-anchor="middle" font-size="11" font-weight="bold" fill="#90ee90">On-Site Fuel Cell</text>
+  <line x1="670" y1="465" x2="810" y2="465" stroke="#90ee90" stroke-width="1"/>
+  <text x="740" y="483" text-anchor="middle" font-size="9" fill="#c0f0c0">500 kW backup power</text>
+  <text x="740" y="498" text-anchor="middle" font-size="9" fill="#c0f0c0">Station self-powered</text>
+
+  <!-- ===== SAFETY ZONES ===== -->
+  <!-- Blast wall -->
+  <rect x="560" y="280" width="10" height="230" fill="#ffcc00" opacity="0.5" stroke="#ff8800" stroke-width="1"/>
+  <text x="555" y="400" text-anchor="middle" font-size="8" fill="#ff8800" transform="rotate(-90, 555, 400)">BLAST WALL</text>
+
+  <!-- Vent stack -->
+  <rect x="580" y="280" width="15" height="80" rx="3" fill="#888"/>
+  <text x="587" y="275" text-anchor="middle" font-size="8" fill="#666">VENT</text>
+
+  <!-- Emergency shutdown -->
+  <circle cx="90" cy="250" r="10" fill="#ff0000" stroke="#cc0000" stroke-width="2"/>
+  <text x="90" y="253" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">ESD</text>
+  <circle cx="810" cy="250" r="10" fill="#ff0000" stroke="#cc0000" stroke-width="2"/>
+  <text x="810" y="253" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">ESD</text>
+
+  <!-- ===== LEGEND ===== -->
+  <rect x="60" y="550" width="780" height="110" rx="8" fill="#fff" opacity="0.9" stroke="#ccc" stroke-width="1"/>
+  <text x="80" y="570" font-size="11" font-weight="bold" fill="#1a1a2e">Legend:</text>
+
+  <!-- Legend items -->
+  <rect x="80" y="580" width="20" height="15" rx="3" fill="#2c3e50" stroke="#00d4aa" stroke-width="1"/>
+  <text x="105" y="592" font-size="9" fill="#333">700 bar Dispenser (Cars)</text>
+
+  <rect x="260" y="580" width="20" height="15" rx="3" fill="#2c3e50" stroke="#00d4aa" stroke-width="1"/>
+  <text x="285" y="592" font-size="9" fill="#333">350 bar Dispenser (Trucks/Buses)</text>
+
+  <rect x="460" y="580" width="20" height="15" rx="3" fill="#00d4aa" opacity="0.3" stroke="#00d4aa" stroke-width="1"/>
+  <text x="485" y="592" font-size="9" fill="#333">Cascade Storage</text>
+
+  <rect x="80" y="605" width="20" height="15" rx="3" fill="#d4c4a0" stroke="#8b7355" stroke-width="1"/>
+  <text x="105" y="617" font-size="9" fill="#333">Compression/Purification</text>
+
+  <rect x="260" y="605" width="20" height="15" rx="3" fill="#4a4a6a" stroke="#00d4aa" stroke-width="1"/>
+  <text x="285" y="617" font-size="9" fill="#333">Pipeline Connection</text>
+
+  <rect x="460" y="605" width="20" height="15" rx="3" fill="#2d5a3d" stroke="#90ee90" stroke-width="1"/>
+  <text x="485" y="617" font-size="9" fill="#333">Fuel Cell Backup</text>
+
+  <!-- Safety features -->
+  <text x="80" y="645" font-size="10" font-weight="bold" fill="#cc0000">Safety Features:</text>
+  <text x="180" y="645" font-size="9" fill="#333">UV/IR Flame Detectors | Gas Detection (10%/25% LFL) | Emergency Shutdown (ESD) | Blast Wall | Vent Stack | 24/7 Remote Monitoring</text>
+
+  <!-- Vehicle icons (parked at dispensers) -->
+  <!-- Car -->
+  <g transform="translate(130, 210)">
+    <rect x="-15" y="-8" width="30" height="15" rx="5" fill="#4a90d9"/>
+    <circle cx="-8" cy="9" r="4" fill="#333"/>
+    <circle cx="8" cy="9" r="4" fill="#333"/>
+  </g>
+  <!-- Car -->
+  <g transform="translate(240, 210)">
+    <rect x="-15" y="-8" width="30" height="15" rx="5" fill="#f5a623"/>
+    <circle cx="-8" cy="9" r="4" fill="#333"/>
+    <circle cx="8" cy="9" r="4" fill="#333"/>
+  </g>
+  <!-- Truck -->
+  <g transform="translate(660, 215)">
+    <rect x="-25" y="-12" width="50" height="20" rx="4" fill="#6b8e23"/>
+    <circle cx="-15" cy="10" r="5" fill="#333"/>
+    <circle cx="15" cy="10" r="5" fill="#333"/>
+  </g>
+  <!-- Bus -->
+  <g transform="translate(760, 215)">
+    <rect x="-20" y="-15" width="40" height="25" rx="4" fill="#8b4513"/>
+    <circle cx="-10" cy="12" r="5" fill="#333"/>
+    <circle cx="10" cy="12" r="5" fill="#333"/>
+  </g>
+
+</svg>

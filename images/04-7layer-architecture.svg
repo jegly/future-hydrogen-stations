@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="layer1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4a90d9"/>
+      <stop offset="100%" stop-color="#7ab8f5"/>
+    </linearGradient>
+    <linearGradient id="layer2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a6fb5"/>
+      <stop offset="100%" stop-color="#2a8fd5"/>
+    </linearGradient>
+    <linearGradient id="layer3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#2a2a4e"/>
+    </linearGradient>
+    <linearGradient id="layer4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2d5a3d"/>
+      <stop offset="100%" stop-color="#3d7a5d"/>
+    </linearGradient>
+    <linearGradient id="layer5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6b8e23"/>
+      <stop offset="100%" stop-color="#8bae43"/>
+    </linearGradient>
+    <linearGradient id="layer6" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b4513"/>
+      <stop offset="100%" stop-color="#ab6533"/>
+    </linearGradient>
+    <linearGradient id="layer7" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2c3e50"/>
+      <stop offset="100%" stop-color="#4c5e70"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadowLight">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="800" fill="#f0f4f8" rx="8"/>
+
+  <!-- Title -->
+  <text x="500" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">Hydrogen Highway — Seven Layer Architecture</text>
+
+  <!-- ===== LAYER 1: ENERGY HARVESTING ===== -->
+  <g transform="translate(50, 60)">
+    <rect x="0" y="0" width="900" height="80" rx="10" fill="url(#layer1)" filter="url(#shadow)"/>
+    <text x="20" y="25" font-size="14" font-weight="bold" fill="#fff">🌬️ LAYER 1 — Coastal Energy Harvesting</text>
+    <text x="20" y="48" font-size="12" fill="#d0e8ff">Offshore Wind (500 MW) | Floating Solar (100 MW) | Wave Energy | Buffer Storage</text>
+    <text x="20" y="68" font-size="11" fill="#b0d0f0">Dedicated 100% renewable generation — no grid dependence required</text>
+    <!-- Icon -->
+    <g transform="translate(820, 10)">
+      <polygon points="0,30 15,0 30,30" fill="#fff" opacity="0.8"/>
+      <rect x="12" y="30" width="6" height="20" fill="#fff" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- Arrow down -->
+  <polygon points="500,145 510,160 505,160 505,170 495,170 495,160 490,160" fill="#4a90d9"/>
+
+  <!-- ===== LAYER 2: SEAWATER PROCESSING ===== -->
+  <g transform="translate(50, 175)">
+    <rect x="0" y="0" width="900" height="80" rx="10" fill="url(#layer2)" filter="url(#shadow)"/>
+    <text x="20" y="25" font-size="14" font-weight="bold" fill="#fff">💧 LAYER 2 — Seawater Intake and Pre-Processing</text>
+    <text x="20" y="48" font-size="12" fill="#c0e0ff">Ram Pumps (Wave-Powered) | Multi-Stage Filtration | Partial RO Desalination</text>
+    <text x="20" y="68" font-size="11" fill="#a0d0f0">Brine valorisation → NaOH, Cl₂, Mg(OH)₂, Li — zero waste discharge</text>
+    <!-- Icon -->
+    <g transform="translate(820, 15)">
+      <path d="M 0,30 Q 15,10 30,30" fill="none" stroke="#fff" stroke-width="2" opacity="0.8"/>
+      <path d="M 5,35 Q 15,20 25,35" fill="none" stroke="#fff" stroke-width="2" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- Arrow down -->
+  <polygon points="500,260 510,275 505,275 505,285 495,285 495,275 490,275" fill="#1a6fb5"/>
+
+  <!-- ===== LAYER 3: ELECTROLYSIS ===== -->
+  <g transform="translate(50, 290)">
+    <rect x="0" y="0" width="900" height="80" rx="10" fill="url(#layer3)" filter="url(#shadow)"/>
+    <text x="20" y="25" font-size="14" font-weight="bold" fill="#00d4aa">⚡ LAYER 3 — Electrolysis and Hydrogen Production</text>
+    <text x="20" y="48" font-size="12" fill="#90e0d0">300 MW Hybrid (PEM + Alkaline) | 45,000 tonnes H₂/year | 65% efficiency</text>
+    <text x="20" y="68" font-size="11" fill="#70c0b0">Co-products: 360,000 t/yr Oxygen + Brine minerals</text>
+    <!-- Icon -->
+    <g transform="translate(820, 15)">
+      <circle cx="15" cy="20" r="10" fill="none" stroke="#00d4aa" stroke-width="2"/>
+      <text x="15" y="25" text-anchor="middle" font-size="12" fill="#00d4aa">H₂</text>
+    </g>
+  </g>
+
+  <!-- Arrow down -->
+  <polygon points="500,375 510,390 505,390 505,400 495,400 495,390 490,390" fill="#1a1a2e"/>
+
+  <!-- ===== LAYER 4: COMPRESSION ===== -->
+  <g transform="translate(50, 405)">
+    <rect x="0" y="0" width="900" height="80" rx="10" fill="url(#layer4)" filter="url(#shadow)"/>
+    <text x="20" y="25" font-size="14" font-weight="bold" fill="#90ee90">🗜️ LAYER 4 — Compression and Buffer Storage</text>
+    <text x="20" y="48" font-size="12" fill="#c0f0c0">30 bar → 70–100 bar Pipeline Injection | Multi-Stage Reciprocating</text>
+    <text x="20" y="68" font-size="11" fill="#a0e0a0">On-site buffer: 50 tonnes Type I steel tanks — 12 hours capacity</text>
+    <!-- Icon -->
+    <g transform="translate(820, 15)">
+      <rect x="5" y="15" width="20" height="20" rx="3" fill="none" stroke="#90ee90" stroke-width="2"/>
+      <text x="15" y="30" text-anchor="middle" font-size="10" fill="#90ee90">P</text>
+    </g>
+  </g>
+
+  <!-- Arrow down -->
+  <polygon points="500,490 510,505 505,505 505,515 495,515 495,505 490,505" fill="#2d5a3d"/>
+
+  <!-- ===== LAYER 5: PIPELINE ===== -->
+  <g transform="translate(50, 520)">
+    <rect x="0" y="0" width="900" height="80" rx="10" fill="url(#layer5)" filter="url(#shadow)"/>
+    <text x="20" y="25" font-size="14" font-weight="bold" fill="#f0f0c0">🛢️ LAYER 5 — Transmission Pipeline Network</text>
+    <text x="20" y="48" font-size="12" fill="#e0f0b0">FRP / Coated Steel | 188 km Trunk Line | 70–100 bar Operating Pressure</text>
+    <text x="20" y="68" font-size="11" fill="#d0e0a0">Fibre optic DAS leak detection | H₂ embrittlement-resistant materials</text>
+    <!-- Icon -->
+    <g transform="translate(820, 15)">
+      <line x1="5" y1="30" x2="25" y2="30" stroke="#f0f0c0" stroke-width="4"/>
+      <circle cx="15" cy="30" r="6" fill="#f0f0c0"/>
+    </g>
+  </g>
+
+  <!-- Arrow down -->
+  <polygon points="500,605 510,620 505,620 505,630 495,630 495,620 490,620" fill="#6b8e23"/>
+
+  <!-- ===== LAYER 6: DISTRIBUTION ===== -->
+  <g transform="translate(50, 635)">
+    <rect x="0" y="0" width="900" height="80" rx="10" fill="url(#layer6)" filter="url(#shadow)"/>
+    <text x="20" y="25" font-size="14" font-weight="bold" fill="#ffd700">🏭 LAYER 6 — Distribution Hubs and Barrel Transport</text>
+    <text x="20" y="48" font-size="12" fill="#ffe0a0">4 Regional Hubs | 750-Barrel Fleet | rHDPE + Recycled Aluminium</text>
+    <text x="20" y="68" font-size="11" fill="#ffd080">Closed-loop circular economy — barrels manufactured from post-consumer waste</text>
+    <!-- Icon -->
+    <g transform="translate(820, 15)">
+      <rect x="5" y="15" width="20" height="25" rx="3" fill="none" stroke="#ffd700" stroke-width="2"/>
+      <text x="15" y="32" text-anchor="middle" font-size="10" fill="#ffd700">♻️</text>
+    </g>
+  </g>
+
+  <!-- Arrow down -->
+  <polygon points="500,720 510,735 505,735 505,745 495,745 495,735 490,735" fill="#8b4513"/>
+
+  <!-- ===== LAYER 7: END USE ===== -->
+  <g transform="translate(50, 750)">
+    <rect x="0" y="0" width="900" height="40" rx="10" fill="url(#layer7)" filter="url(#shadow)"/>
+    <text x="20" y="25" font-size="14" font-weight="bold" fill="#00d4aa">🚛 LAYER 7 — Fueling Stations and Zero-Emission End Use</text>
+    <text x="350" y="25" font-size="12" fill="#90e0d0">Pipeline-Connected Stations | Barrel-Supplied Stations | Trucks | Buses | Industry</text>
+  </g>
+
+  <!-- Side connection arrows showing integration -->
+  <!-- Energy flow indicator on left side -->
+  <g transform="translate(30, 100)">
+    <text x="0" y="0" font-size="9" fill="#4a90d9" transform="rotate(-90)">ENERGY FLOW →</text>
+  </g>
+
+  <!-- Right side icons for key metrics -->
+  <g transform="translate(965, 80)">
+    <rect x="0" y="0" width="25" height="25" rx="5" fill="#4a90d9"/>
+    <text x="12" y="16" text-anchor="middle" font-size="11" fill="#fff">⚡</text>
+  </g>
+  <g transform="translate(965, 195)">
+    <rect x="0" y="0" width="25" height="25" rx="5" fill="#1a6fb5"/>
+    <text x="12" y="16" text-anchor="middle" font-size="11" fill="#fff">💧</text>
+  </g>
+  <g transform="translate(965, 310)">
+    <rect x="0" y="0" width="25" height="25" rx="5" fill="#1a1a2e"/>
+    <text x="12" y="16" text-anchor="middle" font-size="11" fill="#00d4aa">H₂</text>
+  </g>
+  <g transform="translate(965, 425)">
+    <rect x="0" y="0" width="25" height="25" rx="5" fill="#2d5a3d"/>
+    <text x="12" y="16" text-anchor="middle" font-size="11" fill="#90ee90">🗜️</text>
+  </g>
+  <g transform="translate(965, 540)">
+    <rect x="0" y="0" width="25" height="25" rx="5" fill="#6b8e23"/>
+    <text x="12" y="16" text-anchor="middle" font-size="11" fill="#f0f0c0">🛢️</text>
+  </g>
+  <g transform="translate(965, 655)">
+    <rect x="0" y="0" width="25" height="25" rx="5" fill="#8b4513"/>
+    <text x="12" y="16" text-anchor="middle" font-size="11" fill="#ffd700">♻️</text>
+  </g>
+
+</svg>

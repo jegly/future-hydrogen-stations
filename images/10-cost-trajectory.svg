@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="h2Fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00d4aa" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00d4aa" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="dieselFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff6b6b" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ff6b6b" stop-opacity="0.02"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="600" fill="#fff" rx="8" filter="url(#shadow)"/>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">Green Hydrogen Cost Trajectory — 2026 to 2050</text>
+  <text x="450" y="55" text-anchor="middle" font-size="12" fill="#4a5a6a">Cost at Pump ($/kg H₂) — 1 kg H₂ ≈ Energy Equivalent to 1 Gallon (3.8L) Petrol</text>
+
+  <!-- Chart area -->
+  <!-- Y-axis -->
+  <line x1="100" y1="80" x2="100" y2="500" stroke="#333" stroke-width="1.5"/>
+  <!-- X-axis -->
+  <line x1="100" y1="500" x2="850" y2="500" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Y-axis labels and grid -->
+  <text x="90" y="504" text-anchor="end" font-size="10" fill="#666">$0</text>
+  <line x1="100" y1="500" x2="850" y2="500" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+  <text x="90" y="420" text-anchor="end" font-size="10" fill="#666">$2</text>
+  <line x1="100" y1="420" x2="850" y2="420" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+  <text x="90" y="340" text-anchor="end" font-size="10" fill="#666">$4</text>
+  <line x1="100" y1="340" x2="850" y2="340" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+  <text x="90" y="260" text-anchor="end" font-size="10" fill="#666">$6</text>
+  <line x1="100" y1="260" x2="850" y2="260" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+  <text x="90" y="180" text-anchor="end" font-size="10" fill="#666">$8</text>
+  <line x1="100" y1="180" x2="850" y2="180" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+  <text x="90" y="100" text-anchor="end" font-size="10" fill="#666">$10</text>
+  <line x1="100" y1="100" x2="850" y2="100" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+  <!-- Y-axis title -->
+  <text x="40" y="290" text-anchor="middle" font-size="12" fill="#333" transform="rotate(-90, 40, 290)">Cost per kg H₂ (USD)</text>
+
+  <!-- X-axis labels -->
+  <text x="150" y="520" text-anchor="middle" font-size="10" fill="#666">2026</text>
+  <text x="280" y="520" text-anchor="middle" font-size="10" fill="#666">2030</text>
+  <text x="410" y="520" text-anchor="middle" font-size="10" fill="#666">2035</text>
+  <text x="540" y="520" text-anchor="middle" font-size="10" fill="#666">2040</text>
+  <text x="670" y="520" text-anchor="middle" font-size="10" fill="#666">2045</text>
+  <text x="800" y="520" text-anchor="middle" font-size="10" fill="#666">2050</text>
+
+  <!-- X-axis title -->
+  <text x="475" y="550" text-anchor="middle" font-size="12" fill="#333">Year</text>
+
+  <!-- ===== DATA SERIES: Green H₂ Cost ===== -->
+
+  <!-- Area fill -->
+  <polygon points="150,180 280,300 410,340 540,370 670,395 800,420 800,500 150,500" fill="url(#h2Fill)"/>
+
+  <!-- Line -->
+  <polyline points="150,180 280,300 410,340 540,370 670,395 800,420" 
+            fill="none" stroke="#00d4aa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Data points -->
+  <circle cx="150" cy="180" r="6" fill="#00d4aa" stroke="#fff" stroke-width="2"/>
+  <circle cx="280" cy="300" r="6" fill="#00d4aa" stroke="#fff" stroke-width="2"/>
+  <circle cx="410" cy="340" r="6" fill="#00d4aa" stroke="#fff" stroke-width="2"/>
+  <circle cx="540" cy="370" r="6" fill="#00d4aa" stroke="#fff" stroke-width="2"/>
+  <circle cx="670" cy="395" r="6" fill="#00d4aa" stroke="#fff" stroke-width="2"/>
+  <circle cx="800" cy="420" r="6" fill="#00d4aa" stroke="#fff" stroke-width="2"/>
+
+  <!-- Value labels -->
+  <text x="150" y="168" text-anchor="middle" font-size="11" font-weight="bold" fill="#00a088">$7.50</text>
+  <text x="280" y="288" text-anchor="middle" font-size="11" font-weight="bold" fill="#00a088">$5.00</text>
+  <text x="410" y="328" text-anchor="middle" font-size="11" font-weight="bold" fill="#00a088">$3.50</text>
+  <text x="540" y="358" text-anchor="middle" font-size="11" font-weight="bold" fill="#00a088">$2.60</text>
+  <text x="670" y="383" text-anchor="middle" font-size="11" font-weight="bold" fill="#00a088">$2.10</text>
+  <text x="800" y="408" text-anchor="middle" font-size="11" font-weight="bold" fill="#00a088">$1.80</text>
+
+  <!-- ===== DIESEL PARITY LINE ===== -->
+  <!-- Diesel price range (typical variability) -->
+  <rect x="100" y="360" width="750" height="30" fill="url(#dieselFill)" rx="3"/>
+  <line x1="100" y1="375" x2="850" y2="375" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="840" y="370" text-anchor="end" font-size="10" fill="#ff6b6b" font-weight="bold">Diesel Parity Zone</text>
+  <text x="840" y="385" text-anchor="end" font-size="9" fill="#cc5555">$3.00–4.00/kg equivalent</text>
+
+  <!-- ===== ANNOTATIONS ===== -->
+
+  <!-- Grey hydrogen parity -->
+  <line x1="100" y1="330" x2="350" y2="330" stroke="#888" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="355" y="334" font-size="9" fill="#888">Grey H₂ cost ($1.50–2.00)</text>
+
+  <!-- Cost inflection arrow -->
+  <path d="M 410 370 Q 475 370 475 320" fill="none" stroke="#00d4aa" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <text x="480" y="310" font-size="9" fill="#00a088">Manufacturing scale</text>
+  <text x="480" y="323" font-size="9" fill="#00a088">+ technology maturity</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#00d4aa"/>
+    </marker>
+  </defs>
+
+  <!-- ===== LEGEND ===== -->
+  <rect x="120" y="555" width="660" height="35" rx="5" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <line x1="140" y1="573" x2="180" y2="573" stroke="#00d4aa" stroke-width="3"/>
+  <text x="185" y="577" font-size="10" fill="#333">Green H₂ Cost at Pump</text>
+  <line x1="320" y1="573" x2="360" y2="573" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="365" y="577" font-size="10" fill="#333">Diesel Parity ($3.00–4.00/kg)</text>
+  <line x1="520" y1="573" x2="560" y2="573" stroke="#888" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="565" y="577" font-size="10" fill="#333">Grey H₂ Cost</text>
+
+</svg>
