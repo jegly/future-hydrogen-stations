@@ -50,7 +50,6 @@ Every component of this system already exists. Offshore wind is mature. Electrol
 **This is not speculative. It is inevitable. The only question is who builds it first, and at what scale.**
 
 ![Process Flow](images/02-process-flow.svg)
-*Sankey-style flow diagram showing seawater intake → filtration → desalination → electrolysis → compression → pipeline/barrel transport → fueling station → vehicle.*
 
 ---
 
